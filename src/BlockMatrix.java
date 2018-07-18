@@ -65,9 +65,9 @@ public class BlockMatrix {
         int row = getBlockRowIndex(blockNumber);
         int column = getBlockColumnIndex(blockNumber);
         Block deleteBlock = new Block("DELETED");
+        String[] prevRowHashes = this.getRowHashes().clone();
+        String[] prevColumnHashes = this.getColumnHashes().clone();
         blockData[row][column]  = deleteBlock;
-        String[] prevRowHashes = this.getRowHashes();
-        String[] prevColumnHashes = this.getColumnHashes();
         updateRowHash(row);
         updateColumnHash(column);
         String[] newRowHashes = this.getRowHashes();
@@ -96,7 +96,8 @@ public class BlockMatrix {
 
     //Uses data in each block in the row except those that are null and those in the diagonal
     private void updateRowHash(int row) {
-        rowHashes[row] =  calculateRowHash(row);
+        this.rowHashes[row] =  calculateRowHash(row);
+        //System.out.println("Row hashes have been updated to " + Arrays.toString(this.rowHashes));
     }
 
     //Uses data in each block in the column except those that are null and those in the diagonal
@@ -121,7 +122,8 @@ public class BlockMatrix {
         } else {
             System.out.println("Hash Type invalid");
         }
-        return StringUtil.applySha256(sb.toString());
+        String hash = StringUtil.applySha256(sb.toString());
+        return hash;
     }
 
     public String calculateColumnHash(int column) {
@@ -142,7 +144,8 @@ public class BlockMatrix {
             System.out.println("Hash Type invalid");
         }
 
-        return StringUtil.applySha256(sb.toString());
+        String hash = StringUtil.applySha256(sb.toString());
+        return hash;
     }
 
     // helper method to get the row of a block given a block number
@@ -185,6 +188,8 @@ public class BlockMatrix {
                 numColChanged++;
             }
         }
+        System.out.println("numRowChanged = " + numRowChanged);
+        System.out.println("numColChanged = " + numColChanged);
         if (numRowChanged > 1 || numColChanged > 1) {
             return false;
         }
@@ -221,6 +226,7 @@ public class BlockMatrix {
     }
 
     public void printRowHashes() {
+        System.out.println("Row Hashes:");
         System.out.println("----------------------------------------------------------------");
         for (int i = 0; i < rowHashes.length; i++) {
             System.out.println(rowHashes[i]);
@@ -229,6 +235,7 @@ public class BlockMatrix {
     }
 
     public void printColumnHashes() {
+        System.out.println("Column hashes:");
         System.out.println("----------------------------------------------------------------");
         for (int i = 0; i < columnHashes.length; i++) {
             System.out.println(columnHashes[i]);

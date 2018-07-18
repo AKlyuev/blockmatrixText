@@ -10,10 +10,16 @@ public class MatrixChain {
 
         //add our blocks to the BlockMatrix:
 
+
+
         bm.add(new Block("First"));
+
         bm.add(new Block("Second"));
+
         bm.add(new Block("Third"));
+
         bm.deleteBlock(2);
+
 
         System.out.println("\nOur block matrix:\n" + bm);
         System.out.println("\nMatrix is valid: " + isMatrixValid());
