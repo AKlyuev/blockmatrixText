@@ -4,7 +4,6 @@
     <list default="true" id="c614be32-e85a-4b29-b735-82e531d737ff" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BlockMatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BlockMatrix.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MatrixChain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MatrixChain.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,11 +27,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BlockMatrix.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="BlockMatrix.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/BlockMatrix.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="353">
-              <caret line="78" column="5" lean-forward="true" selection-start-line="78" selection-start-column="5" selection-end-line="78" selection-end-column="5" />
+            <state relative-caret-position="359">
+              <caret line="189" column="9" lean-forward="true" selection-start-line="189" selection-start-column="9" selection-end-line="189" selection-end-column="9" />
               <folding>
                 <element signature="e#4844#4845#0" expanded="true" />
                 <element signature="e#4910#4911#0" expanded="true" />
@@ -51,7 +50,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MatrixChain.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MatrixChain.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MatrixChain.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="340">
@@ -95,8 +94,8 @@
       <list>
         <option value="$PROJECT_DIR$/src/StringUtil.java" />
         <option value="$PROJECT_DIR$/src/Block.java" />
-        <option value="$PROJECT_DIR$/src/BlockMatrix.java" />
         <option value="$PROJECT_DIR$/src/MatrixChain.java" />
+        <option value="$PROJECT_DIR$/src/BlockMatrix.java" />
       </list>
     </option>
   </component>
@@ -383,10 +382,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/MatrixChain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="26" lean-forward="true" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/BlockMatrix.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="78" column="5" lean-forward="true" selection-start-line="78" selection-start-column="5" selection-end-line="78" selection-end-column="5" />
+        <state relative-caret-position="359">
+          <caret line="189" column="9" lean-forward="true" selection-start-line="189" selection-start-column="9" selection-end-line="189" selection-end-column="9" />
           <folding>
             <element signature="e#4844#4845#0" expanded="true" />
             <element signature="e#4910#4911#0" expanded="true" />
@@ -401,13 +407,6 @@
             <element signature="e#8848#8849#0" expanded="true" />
             <element signature="e#8892#8893#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MatrixChain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="26" lean-forward="true" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
         </state>
       </provider>
     </entry>

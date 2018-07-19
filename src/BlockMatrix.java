@@ -181,10 +181,10 @@ public class BlockMatrix {
         int numRowChanged = 0;
         int numColChanged = 0;
         for (int i = 0; i < dimension; i++) {
-            if (prevRow[i] != newRow[i]) {
+            if (!prevRow[i].equals(newRow[i])) {
                 numRowChanged++;
             }
-            if (prevCol[i] != newCol[i]) {
+            if (!prevCol[i].equals(newCol[i])) {
                 numColChanged++;
             }
         }
